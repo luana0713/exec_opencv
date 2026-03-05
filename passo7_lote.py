@@ -67,7 +67,9 @@ def processar_lote(pasta_imagens, saida_json=None):
 
 
 # ── Criar pasta de teste com placas sintéticas ────────────────
-placas_teste = ["ABC1234", "BRA2E23", "XYZ9W88", "DEF5678", "GHI3J45"]
+placas_teste = ["ABC1558", "BRA2E23", "lYZ9W88", "DEF5678", "GHI3J45"] # toda vez que eu atualizar um dado ele cria uma
+# placa nova sem excluir as outras
+
 for placa in placas_teste:
     img = criar_placa_sintetica(placa, largura=500, altura=150)
 
